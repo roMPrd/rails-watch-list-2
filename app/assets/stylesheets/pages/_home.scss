@@ -1,1 +1,62 @@
 // Specific CSS for your home-page
+
+// container //
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-right: 0;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+}
+
+// Header //
+
+.header-list {
+  background-image: url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2luZW1hfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.header-list h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  width: 100%;
+}
+
+// Button Green //
+
+.button-green {
+  right: 0;
+  top: 0;
+  position: absolute;
+  background-color: #2ecc71;
+  padding: 1rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+.button-green:hover {
+  background-color: #27ae60;
+  color: white;
+}
