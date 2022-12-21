@@ -1,5 +1,20 @@
 // Specific CSS for your home-page
 
+// config //
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  color: #696969;
+}
+
 // container //
 
 .container {
@@ -59,4 +74,29 @@
 .button-green:hover {
   background-color: #27ae60;
   color: white;
+}
+
+// Container List //
+
+.container-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+.container-list .list-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+  margin: 1rem;
+  height: 30vh;
+
 }
