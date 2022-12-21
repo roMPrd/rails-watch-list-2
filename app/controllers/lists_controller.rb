@@ -1,5 +1,5 @@
 class ListsController < ApplicationController
-  before_action :set_list, only: %i[ show update destroy ]
+  before_action :set_list, only: %i[ show destroy ]
 
   # GET /lists or /lists.json
   def index
@@ -16,11 +16,6 @@ class ListsController < ApplicationController
     @list = List.new
   end
 
-  # GET /lists/1/edit
-  # def edit
-  # end
-
-  # POST /lists or /lists.json
   def create
     @list = List.new(list_params)
     if @list.save
@@ -29,18 +24,6 @@ class ListsController < ApplicationController
       render :new, status: :unprocessable_entity
     end
   end
-
-  # PATCH/PUT /lists/1 or /lists/1.json
-  # def update
-  #   respond_to do |format|
-  #     if @list.update(list_params)
-  #       redirect_to list_path(@list), notice: "List was successfully updated."
-
-  #     else
-  #       render :edit, status: :unprocessable_entity
-  #     end
-  #   end
-  # end
 
   # DELETE /lists/1 or /lists/1.json
   def destroy
